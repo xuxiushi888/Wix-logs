@@ -1,0 +1,72 @@
+[030C:05C4][2022-10-31T02:11:15]i001: Burn v3.11.2.4516, Windows v10.0 (Build 19042: Service Pack 0), path: C:\Windows\Temp\{39E19B13-B6F2-4C31-AC04-D4839ED6AF6C}\.cr\OasisSetup_4.1.8442_BETA.exe
+[030C:05C4][2022-10-31T02:11:15]i009: Command Line: '-burn.clean.room=C:\Users\xujack\Desktop\OasisSetup_4.1.8442_BETA.exe -burn.filehandle.attached=488 -burn.filehandle.self=492'
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\xujack\Desktop\OasisSetup_4.1.8442_BETA.exe'
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'C:\Users\xujack\Desktop\'
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115.log'
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'WixBundleName' to value 'Teradyne IG-XL Oasis Toolset'
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'WixBundleManufacturer' to value 'Teradyne'
+[030C:2D80][2022-10-31T02:11:15]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[030C:2D80][2022-10-31T02:11:15]i000: Setting version variable 'WixBundleFileVersion' to value '4.1.8442.0'
+[030C:05C4][2022-10-31T02:11:15]i100: Detect begin, 3 packages
+[030C:05C4][2022-10-31T02:11:15]i000: Setting string variable 'NETFRAMEWORK45' to value '528372'
+[030C:05C4][2022-10-31T02:11:15]i052: Condition 'NETFRAMEWORK45 >= 528033' evaluates to true.
+[030C:05C4][2022-10-31T02:11:15]i101: Detected package: Netfx48Exe, state: Present, cached: None
+[030C:05C4][2022-10-31T02:11:15]i101: Detected package: WIXHelpManager.msi, state: Present, cached: Complete
+[030C:05C4][2022-10-31T02:11:15]i101: Detected package: OasisSetup.msi, state: Absent, cached: None
+[030C:05C4][2022-10-31T02:11:15]i052: Condition 'VersionNT=VersionNT64' evaluates to true.
+[030C:05C4][2022-10-31T02:11:15]i199: Detect complete, result: 0x0
+[030C:2D80][2022-10-31T02:11:17]i000: Setting numeric variable 'EulaAcceptCheckbox' to value 1
+[030C:05C4][2022-10-31T02:11:17]i200: Plan begin, 3 packages, action: Install
+[030C:05C4][2022-10-31T02:11:17]w321: Skipping dependency registration on package with no dependency providers: Netfx48Exe
+[030C:05C4][2022-10-31T02:11:17]i000: Setting string variable 'WixBundleRollbackLog_OasisSetup.msi' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115_000_OasisSetup.msi_rollback.log'
+[030C:05C4][2022-10-31T02:11:17]i000: Setting string variable 'WixBundleLog_OasisSetup.msi' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115_000_OasisSetup.msi.log'
+[030C:05C4][2022-10-31T02:11:17]i201: Planned package: Netfx48Exe, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[030C:05C4][2022-10-31T02:11:17]i201: Planned package: WIXHelpManager.msi, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: Register
+[030C:05C4][2022-10-31T02:11:17]i201: Planned package: OasisSetup.msi, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[030C:05C4][2022-10-31T02:11:17]i299: Plan complete, result: 0x0
+[030C:05C4][2022-10-31T02:11:17]i300: Apply begin
+[030C:05C4][2022-10-31T02:11:17]i010: Launching elevated engine process.
+[030C:05C4][2022-10-31T02:11:17]i011: Launched elevated engine process.
+[030C:05C4][2022-10-31T02:11:18]i012: Connected to elevated engine.
+[3D70:16E0][2022-10-31T02:11:18]i358: Pausing automatic updates.
+[3D70:16E0][2022-10-31T02:11:18]i359: Paused automatic updates.
+[3D70:16E0][2022-10-31T02:11:18]i360: Creating a system restore point.
+[3D70:16E0][2022-10-31T02:11:18]i361: Created a system restore point.
+[3D70:16E0][2022-10-31T02:11:18]i370: Session begin, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6ea28c67-1f07-492c-9b16-4df7c98569b9}, options: 0x7, disable resume: No
+[3D70:16E0][2022-10-31T02:11:18]i000: Caching bundle from: 'C:\Windows\Temp\{6FF280ED-F74A-4703-A4C7-E5152F2DEE3B}\.be\OasisSetup_4.1.8442_BETA.exe' to: 'C:\ProgramData\Package Cache\{6ea28c67-1f07-492c-9b16-4df7c98569b9}\OasisSetup_4.1.8442_BETA.exe'
+[3D70:16E0][2022-10-31T02:11:18]i320: Registering bundle dependency provider: {6ea28c67-1f07-492c-9b16-4df7c98569b9}, version: 4.1.8442.0
+[3D70:16E0][2022-10-31T02:11:18]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6ea28c67-1f07-492c-9b16-4df7c98569b9}, resume: Active, restart initiated: No, disable resume: No
+[3D70:3334][2022-10-31T02:11:19]i305: Verified acquired payload: OasisSetup.msi at path: C:\ProgramData\Package Cache\.unverified\OasisSetup.msi, moving to: C:\ProgramData\Package Cache\{28C39E9E-3C2E-45A4-B938-8BB2802BBB19}v4.1.8442\OasisSetup.msi.
+[3D70:16E0][2022-10-31T02:11:19]i323: Registering package dependency provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, version: 6.0.0.0, package: WIXHelpManager.msi
+[3D70:16E0][2022-10-31T02:11:19]i325: Registering dependency: {6ea28c67-1f07-492c-9b16-4df7c98569b9} on package provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, package: WIXHelpManager.msi
+[3D70:16E0][2022-10-31T02:11:19]i323: Registering package dependency provider: {28C39E9E-3C2E-45A4-B938-8BB2802BBB19}, version: 4.1.8442, package: OasisSetup.msi
+[3D70:16E0][2022-10-31T02:11:19]i301: Applying execute package: OasisSetup.msi, action: Install, path: C:\ProgramData\Package Cache\{28C39E9E-3C2E-45A4-B938-8BB2802BBB19}v4.1.8442\OasisSetup.msi, arguments: ' ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7"'
+[030C:05C4][2022-10-31T02:12:20]i319: Applied execute package: OasisSetup.msi, result: 0x0, restart: None
+[3D70:16E0][2022-10-31T02:12:20]i325: Registering dependency: {6ea28c67-1f07-492c-9b16-4df7c98569b9} on package provider: {28C39E9E-3C2E-45A4-B938-8BB2802BBB19}, package: OasisSetup.msi
+[3D70:16E0][2022-10-31T02:12:20]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6ea28c67-1f07-492c-9b16-4df7c98569b9}, resume: ARP, restart: None, disable resume: No
+[3D70:16E0][2022-10-31T02:12:20]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6ea28c67-1f07-492c-9b16-4df7c98569b9}, resume: ARP, restart initiated: No, disable resume: No
+[030C:05C4][2022-10-31T02:12:21]i399: Apply complete, result: 0x0, restart: None, ba requested restart:  No
+[030C:05C4][2022-10-31T02:12:25]i500: Shutting down, exit code: 0x0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: EulaAcceptCheckbox = 1
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: NETFRAMEWORK45 = 528372
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: VersionNT = 10.0.0.0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: VersionNT64 = 10.0.0.0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleAction = 5
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleElevated = 1
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleFileVersion = 4.1.8442.0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleInstalled = 0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleLog = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115.log
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleLog_OasisSetup.msi = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115_000_OasisSetup.msi.log
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleManufacturer = Teradyne
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleName = Teradyne IG-XL Oasis Toolset
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleOriginalSource = C:\Users\xujack\Desktop\OasisSetup_4.1.8442_BETA.exe
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleOriginalSourceFolder = C:\Users\xujack\Desktop\
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleProviderKey = {6ea28c67-1f07-492c-9b16-4df7c98569b9}
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleRollbackLog_OasisSetup.msi = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031021115_000_OasisSetup.msi_rollback.log
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleSourceProcessFolder = C:\Users\xujack\Desktop\
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleSourceProcessPath = C:\Users\xujack\Desktop\OasisSetup_4.1.8442_BETA.exe
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleTag = 
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleUILevel = 4
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixBundleVersion = 4.1.8442.0
+[030C:05C4][2022-10-31T02:12:25]i410: Variable: WixStdBALanguageId = 1033
+[030C:05C4][2022-10-31T02:12:25]i007: Exit code: 0x0, restarting: No
