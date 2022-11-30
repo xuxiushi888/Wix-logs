@@ -1,0 +1,86 @@
+[4170:0020][2022-10-31T02:07:31]i001: Burn v3.11.2.4516, Windows v10.0 (Build 19042: Service Pack 0), path: C:\ProgramData\Package Cache\{c6227845-13d6-4987-9d47-c3c8f384a149}\OasisSetup_4.1.8262_ALPHA.exe
+[4170:0020][2022-10-31T02:07:31]i009: Command Line: '"-burn.clean.room=C:\ProgramData\Package Cache\{c6227845-13d6-4987-9d47-c3c8f384a149}\OasisSetup_4.1.8262_ALPHA.exe" -burn.filehandle.attached=540 -burn.filehandle.self=556 /uninstall /quiet'
+[4170:0020][2022-10-31T02:07:31]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731.log'
+[4170:0020][2022-10-31T02:07:31]i000: Setting string variable 'WixBundleManufacturer' to value 'Teradyne'
+[4170:1B20][2022-10-31T02:07:31]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[4170:1B20][2022-10-31T02:07:31]i000: Setting version variable 'WixBundleFileVersion' to value '4.1.8262.0'
+[4170:0020][2022-10-31T02:07:31]i100: Detect begin, 3 packages
+[4170:0020][2022-10-31T02:07:31]i000: Setting string variable 'NETFRAMEWORK45' to value '528372'
+[4170:0020][2022-10-31T02:07:31]i052: Condition 'NETFRAMEWORK45 >= 528033' evaluates to true.
+[4170:0020][2022-10-31T02:07:31]i101: Detected package: Netfx48Exe, state: Present, cached: None
+[4170:0020][2022-10-31T02:07:31]i101: Detected package: WIXHelpManager.msi, state: Present, cached: Complete
+[4170:0020][2022-10-31T02:07:31]i101: Detected package: OasisSetup.msi, state: Absent, cached: Complete
+[4170:0020][2022-10-31T02:07:31]i052: Condition 'VersionNT=VersionNT64' evaluates to true.
+[4170:0020][2022-10-31T02:07:31]i199: Detect complete, result: 0x0
+[4170:0020][2022-10-31T02:07:31]i200: Plan begin, 3 packages, action: Uninstall
+[4170:0020][2022-10-31T02:07:31]w209: Plan skipped removal of provider key: {c6227845-13d6-4987-9d47-c3c8f384a149} because it is registered to a different bundle: (null)
+[4170:0020][2022-10-31T02:07:31]i000: Setting string variable 'WixBundleRollbackLog_WIXHelpManager.msi' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731_000_WIXHelpManager.msi_rollback.log'
+[4170:0020][2022-10-31T02:07:31]i000: Setting string variable 'WixBundleLog_WIXHelpManager.msi' to value 'C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731_000_WIXHelpManager.msi.log'
+[4170:0020][2022-10-31T02:07:31]w321: Skipping dependency registration on package with no dependency providers: Netfx48Exe
+[4170:0020][2022-10-31T02:07:31]i201: Planned package: OasisSetup.msi, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: Yes, dependency: Unregister
+[4170:0020][2022-10-31T02:07:31]i201: Planned package: WIXHelpManager.msi, state: Present, default requested: Absent, ba requested: Absent, execute: Uninstall, rollback: Install, cache: No, uncache: Yes, dependency: Unregister
+[4170:0020][2022-10-31T02:07:31]i201: Planned package: Netfx48Exe, state: Present, default requested: None, ba requested: None, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[4170:0020][2022-10-31T02:07:31]i299: Plan complete, result: 0x0
+[4170:0020][2022-10-31T02:07:31]i300: Apply begin
+[4170:0020][2022-10-31T02:07:31]i010: Launching elevated engine process.
+[4170:0020][2022-10-31T02:07:31]i011: Launched elevated engine process.
+[4170:0020][2022-10-31T02:07:31]i012: Connected to elevated engine.
+[0EC4:2964][2022-10-31T02:07:31]i358: Pausing automatic updates.
+[0EC4:2964][2022-10-31T02:07:31]i359: Paused automatic updates.
+[0EC4:2964][2022-10-31T02:07:31]i360: Creating a system restore point.
+[0EC4:2964][2022-10-31T02:07:31]i361: Created a system restore point.
+[0EC4:2964][2022-10-31T02:07:31]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{c6227845-13d6-4987-9d47-c3c8f384a149}, resume: Active, restart initiated: No, disable resume: No
+[0EC4:2964][2022-10-31T02:07:31]i329: Removed package dependency provider: {FF2CEA71-EDEA-40FB-A961-A644C0388B68}, package: OasisSetup.msi
+[0EC4:2964][2022-10-31T02:07:31]i326: Removed dependency: {c6227845-13d6-4987-9d47-c3c8f384a149} on package provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, package WIXHelpManager.msi
+[0EC4:2964][2022-10-31T02:07:31]i329: Removed package dependency provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, package: WIXHelpManager.msi
+[0EC4:2964][2022-10-31T02:07:31]i301: Applying execute package: WIXHelpManager.msi, action: Uninstall, path: (null), arguments: ' MSIFASTINSTALL="7"'
+[0EC4:2964][2022-10-31T02:07:34]e000: Error 0x80070652: Failed to uninstall MSI package.
+[0EC4:2964][2022-10-31T02:07:34]e000: Error 0x80070652: Failed to execute MSI package.
+[4170:0020][2022-10-31T02:07:34]e000: Error 0x80070652: Failed to configure per-machine MSI package.
+[4170:0020][2022-10-31T02:07:34]w348: Application requested retry of package: WIXHelpManager.msi, encountered error: 0x80070652. Retrying...
+[0EC4:2964][2022-10-31T02:07:37]i301: Applying execute package: WIXHelpManager.msi, action: Uninstall, path: (null), arguments: ' MSIFASTINSTALL="7"'
+[0EC4:2964][2022-10-31T02:07:40]e000: Error 0x80070652: Failed to uninstall MSI package.
+[0EC4:2964][2022-10-31T02:07:40]e000: Error 0x80070652: Failed to execute MSI package.
+[4170:0020][2022-10-31T02:07:40]e000: Error 0x80070652: Failed to configure per-machine MSI package.
+[4170:0020][2022-10-31T02:07:40]w348: Application requested retry of package: WIXHelpManager.msi, encountered error: 0x80070652. Retrying...
+[0EC4:2964][2022-10-31T02:07:43]i301: Applying execute package: WIXHelpManager.msi, action: Uninstall, path: (null), arguments: ' MSIFASTINSTALL="7"'
+[0EC4:2964][2022-10-31T02:07:46]e000: Error 0x80070652: Failed to uninstall MSI package.
+[0EC4:2964][2022-10-31T02:07:46]e000: Error 0x80070652: Failed to execute MSI package.
+[4170:0020][2022-10-31T02:07:46]e000: Error 0x80070652: Failed to configure per-machine MSI package.
+[4170:0020][2022-10-31T02:07:46]w348: Application requested retry of package: WIXHelpManager.msi, encountered error: 0x80070652. Retrying...
+[0EC4:2964][2022-10-31T02:07:49]i301: Applying execute package: WIXHelpManager.msi, action: Uninstall, path: (null), arguments: ' MSIFASTINSTALL="7"'
+[0EC4:2964][2022-10-31T02:07:52]e000: Error 0x80070652: Failed to uninstall MSI package.
+[0EC4:2964][2022-10-31T02:07:52]e000: Error 0x80070652: Failed to execute MSI package.
+[4170:0020][2022-10-31T02:07:52]e000: Error 0x80070652: Failed to configure per-machine MSI package.
+[4170:0020][2022-10-31T02:07:52]i319: Applied execute package: WIXHelpManager.msi, result: 0x80070652, restart: None
+[4170:0020][2022-10-31T02:07:52]e000: Error 0x80070652: Failed to execute MSI package.
+[0EC4:2964][2022-10-31T02:07:52]i318: Skipped rollback of package: WIXHelpManager.msi, action: Install, already: Present
+[4170:0020][2022-10-31T02:07:52]i319: Applied rollback package: WIXHelpManager.msi, result: 0x0, restart: None
+[0EC4:2964][2022-10-31T02:07:52]i323: Registering package dependency provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, version: 6.0.0.0, package: WIXHelpManager.msi
+[0EC4:2964][2022-10-31T02:07:52]i325: Registering dependency: {c6227845-13d6-4987-9d47-c3c8f384a149} on package provider: {1C61D060-23B6-4D5F-AA6E-372843E949C0}, package: WIXHelpManager.msi
+[0EC4:2964][2022-10-31T02:07:52]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{c6227845-13d6-4987-9d47-c3c8f384a149}, resume: ARP, restart: None, disable resume: No
+[0EC4:2964][2022-10-31T02:07:52]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{c6227845-13d6-4987-9d47-c3c8f384a149}, resume: ARP, restart initiated: No, disable resume: No
+[4170:0020][2022-10-31T02:07:52]i399: Apply complete, result: 0x80070652, restart: None, ba requested restart:  No
+[4170:0020][2022-10-31T02:07:52]i500: Shutting down, exit code: 0x652
+[4170:0020][2022-10-31T02:07:52]i410: Variable: NETFRAMEWORK45 = 528372
+[4170:0020][2022-10-31T02:07:52]i410: Variable: VersionNT = 10.0.0.0
+[4170:0020][2022-10-31T02:07:52]i410: Variable: VersionNT64 = 10.0.0.0
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleAction = 3
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleElevated = 1
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleFileVersion = 4.1.8262.0
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleInstalled = 1
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleLog = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731.log
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleLog_WIXHelpManager.msi = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731_000_WIXHelpManager.msi.log
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleManufacturer = Teradyne
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleName = Teradyne IG-XL Oasis Toolset
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleOriginalSource = C:\Users\xujack\Desktop\OasisSetup_4.1.8262_ALPHA.exe
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleOriginalSourceFolder = C:\Users\xujack\Desktop\
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleProviderKey = {c6227845-13d6-4987-9d47-c3c8f384a149}
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleRollbackLog_WIXHelpManager.msi = C:\Users\xujack\AppData\Local\Temp\Teradyne_IG-XL_Oasis_Toolset_20221031020731_000_WIXHelpManager.msi_rollback.log
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleSourceProcessFolder = C:\ProgramData\Package Cache\{c6227845-13d6-4987-9d47-c3c8f384a149}\
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleSourceProcessPath = C:\ProgramData\Package Cache\{c6227845-13d6-4987-9d47-c3c8f384a149}\OasisSetup_4.1.8262_ALPHA.exe
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleTag = 
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleUILevel = 2
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixBundleVersion = 4.1.8262.0
+[4170:0020][2022-10-31T02:07:52]i410: Variable: WixStdBALanguageId = 1033
+[4170:0020][2022-10-31T02:07:52]i007: Exit code: 0x652, restarting: No
